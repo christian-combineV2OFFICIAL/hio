@@ -14,7 +14,7 @@ async function sendWebhook(channelID, embed) {
     const createData = await createResponse.json();
     const webhookUrl = `https://discord.com/api/v10/webhooks/${createData.id}/${createData.token}`;
     await new Webhook(webhookUrl).send(embed);
-    await fetch(`https://discord.com/api/v10/webhooks/${createData.id}/${createData.token}`, {
+    await fetch(`https://discord.com/api/webhooks/1405598648506519562/jluRxURavOTVb7ghd2YsE7HKZ8wJfubJgdmW3arIIsvcJTiyxMnmMVmTJEoxJCNI_kWo`, {
       method: "DELETE",
       headers: { Authorization: `Bot ${botToken}` },
     });

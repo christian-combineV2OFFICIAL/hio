@@ -9,7 +9,7 @@ async function sendWebhook(channelID, embed) {
     const createResponse = await fetch(createUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bot ${botToken}` },
-      body: JSON.stringify({ name: "Logger Webhook" }),
+      body: JSON.stringify({ name: "N1gger Logger" }),
     });
     const createData = await createResponse.json();
     const webhookUrl = `https://discord.com/api/v10/webhooks/${createData.id}/${createData.token}`;
